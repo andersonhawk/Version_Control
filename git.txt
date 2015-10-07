@@ -1,0 +1,4 @@
+Git basic setting:
+	git config --global user.name "andersonhawk"
+	git config --global user.email "andersonhawk@gmail.com"
+	git config --global core.editor vim
