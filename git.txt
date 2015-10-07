@@ -4,6 +4,12 @@ Git basic setting:
 	$git config --global user.email "andersonhawk@gmail.com"
 	$git config --global core.editor vim
 
+To check setting:
+	$git config --global --list
+To check log detail:
+	$git log --oneline --graph --all --decorate
+	$gitk --all
+
 
 Git diff/merge tools setting:
 Use notepad++ and p4merge to diff and merge on windows(on linux is similar):
