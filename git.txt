@@ -1,4 +1,25 @@
 Git basic setting:
-	git config --global user.name "andersonhawk"
-	git config --global user.email "andersonhawk@gmail.com"
-	git config --global core.editor vim
+
+	$git config --global user.name "andersonhawk"
+	$git config --global user.email "andersonhawk@gmail.com"
+	$git config --global core.editor vim
+
+
+Git diff/merge tools setting:
+Use notepad++ and p4merge to diff and merge on windows(on linux is similar):
+	for git use link https://git-scm.com,
+	for notepad use link https://notepad-plus-plus.org
+	for p4merge use link http://www.perforce.com
+Add notepad,p4merge paths into windows PATH environment, add config lines:
+
+	$git config --global core.editor "notepad++.exe -multiInst -nosession"
+
+	$git config --global diff.tool "p4merge"
+	$git config --global difftool.p4merge.path "C:\Program Files\Perforce\p4merge.exe"
+	$git config --global difftoo.prompt "false"
+
+	$git config --global merge.tool "p4merge"
+	$git config --global mergetool.p4merge.path "C:\Program Files\Perforce\p4merge.exe"
+	$git config --global mergetool.prompt "false"
+
+Use <git difftool/mergetool to diff/merge on window>.
