@@ -39,3 +39,8 @@ Git discard local changeset and sync update
 Git just discard local changeset
 	$git reset --soft HEAD~1
 	$git revert HEAD
+
+Git removes all untracked files
+	$git clean -df
+Git clears all unstaged changes
+	$git checkout -- .
