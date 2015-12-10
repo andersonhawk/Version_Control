@@ -44,3 +44,8 @@ Git removes all untracked files
 	$git clean -df
 Git clears all unstaged changes
 	$git checkout -- .
+
+
+## packet/unpacket specific branch ##
+	$ git bundle create freebsd-svn-head.bundle svn_head
+	$ git clone freebsd-svn-head.bundle -b svn_head freebsd-svn-head
