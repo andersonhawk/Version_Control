@@ -45,7 +45,14 @@ Git removes all untracked files
 Git clears all unstaged changes
 	$git checkout -- .
 
-
 ## packet/unpacket specific branch ##
 	$ git bundle create freebsd-svn-head.bundle svn_head
 	$ git clone freebsd-svn-head.bundle -b svn_head freebsd-svn-head
+
+
+## check commit info ##
+	$ git show <commit id>
+	$ git show <commit id> --stat
+	$ git log --name-only -1
+	$ git log -p <commit id> <commit id>
+	$ git diff <commit id> <commit id>
