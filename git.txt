@@ -56,3 +56,6 @@ Git clears all unstaged changes
 	$ git log --name-only -1
 	$ git log -p <commit id> <commit id>
 	$ git diff <commit id> <commit id>
+
+## archive tag/branch ##
+	$ git archive --format=tar --prefix=nvme-4.6.3/ v4.6.3 | gzip > linux-4.6.3.tar.gz
